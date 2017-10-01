@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AGExpandingTableView_Example' do
+  pod 'AGExpandingTableView', :path => '../'
+
+  target 'AGExpandingTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
