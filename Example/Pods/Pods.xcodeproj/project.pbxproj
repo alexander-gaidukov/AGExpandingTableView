@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06928D6CE1259CFA1836FE14B1534107 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1A40F019AF6C32BD8F157EEC37A97650 /* AGExpandingTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A5C0C48FF61F6968B449781F6A8DC7 /* AGExpandingTableView-dummy.m */; };
+		47645A5DDE4982A89911E3C0CFBF3EAA /* Pods-AGExpandingTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F9CB6337240CA32190EDD766510EFC /* Pods-AGExpandingTableView_Tests-dummy.m */; };
+		4A462B269E17C5AD762C9DD2144228F9 /* Pods-AGExpandingTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5041EE64180A3ACE453AFD28AEBF61 /* Pods-AGExpandingTableView_Example-dummy.m */; };
+		6749FCF227EFFE2793DBF397245B0805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6E2762A8AA055759A8015ADCFF3E0A69 /* AGExpandingTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B66F68BAF5BB13216A1123CB02E026F6 /* AGExpandingTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71E7DD671F822740009765BB /* ExpandingCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD5E1F822703009765BB /* ExpandingCellAnimator.swift */; };
+		71E7DD681F822742009765BB /* FlipAndSlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD601F822703009765BB /* FlipAndSlideAnimator.swift */; };
+		71E7DD691F822745009765BB /* FoldAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD5F1F822703009765BB /* FoldAnimator.swift */; };
+		71E7DD6A1F82274B009765BB /* CATransform3D+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD611F822724009765BB /* CATransform3D+.swift */; };
+		71E7DD6B1F82274E009765BB /* UIView+ExpandingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD621F822724009765BB /* UIView+ExpandingTableView.swift */; };
+		71E7DD6C1F822752009765BB /* ExpandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD651F822738009765BB /* ExpandingCell.swift */; };
+		71E7DD6D1F822755009765BB /* ExpandingCellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD661F822738009765BB /* ExpandingCellDescriptor.swift */; };
+		71E7DD6E1F822758009765BB /* ExpandingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD631F822738009765BB /* ExpandingTableView.swift */; };
+		71E7DD6F1F82275B009765BB /* ExpandingTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD641F822738009765BB /* ExpandingTableViewDataSource.swift */; };
+		87944229D08E5BAD7597333B06E2E4BA /* Pods-AGExpandingTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF622344670F7647C5592C36F726F6E /* Pods-AGExpandingTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7BA1B8084661DE185EB07D8C26F0B67 /* Pods-AGExpandingTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6CF3EFDD78670B4459351663EABD43 /* Pods-AGExpandingTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8965C63FEE54B6A810E44ECA0508135 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD9CDFC59690BCB70C750AF94E140A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 914A3D49D437B996916FFD2B5796BA63;
+			remoteInfo = AGExpandingTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06574E47CB14BF5CD7F5FBB60088F44E /* Pods-AGExpandingTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGExpandingTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		08C6D1D74E624D86E57541123A0DE2B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		102D823DB02129655DC37B6FBF4B7FA5 /* Pods-AGExpandingTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AGExpandingTableView_Tests.modulemap"; sourceTree = "<group>"; };
+		1063A60B938B78F70E20A143FE5E7058 /* Pods-AGExpandingTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGExpandingTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1EF622344670F7647C5592C36F726F6E /* Pods-AGExpandingTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AGExpandingTableView_Example-umbrella.h"; sourceTree = "<group>"; };
+		2383B19C944FE79174300EE3954DF29E /* Pods-AGExpandingTableView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGExpandingTableView_Tests-resources.sh"; sourceTree = "<group>"; };
+		2902A4FFC7F6353962CB093FA99D780A /* Pods-AGExpandingTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGExpandingTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2D9BB710B11BB7BC9597D37945E7FA76 /* Pods-AGExpandingTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGExpandingTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EEB306BF0CF2C77D8F63FA540B4634F /* Pods_AGExpandingTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGExpandingTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDB388422ABDCAAAB1238A25E356D37 /* AGExpandingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AGExpandingTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B3E02E80064D2B18CB53A2A4FAEDD0 /* Pods-AGExpandingTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGExpandingTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		44A5C0C48FF61F6968B449781F6A8DC7 /* AGExpandingTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AGExpandingTableView-dummy.m"; sourceTree = "<group>"; };
+		4B6CF3EFDD78670B4459351663EABD43 /* Pods-AGExpandingTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AGExpandingTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4CDA3AA8D9EF9E344EEE7B2825AF693E /* Pods-AGExpandingTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGExpandingTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		50EF911E13DBEA57DB5FCB143D68CD0D /* Pods-AGExpandingTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGExpandingTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		55C91248B17C88DA1F85C64805CEC6D3 /* Pods-AGExpandingTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGExpandingTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71E7DD5E1F822703009765BB /* ExpandingCellAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingCellAnimator.swift; path = ../AGExpandingTableView/Classes/Animator/ExpandingCellAnimator.swift; sourceTree = "<group>"; };
+		71E7DD5F1F822703009765BB /* FoldAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoldAnimator.swift; path = ../AGExpandingTableView/Classes/Animator/FoldAnimator.swift; sourceTree = "<group>"; };
+		71E7DD601F822703009765BB /* FlipAndSlideAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlipAndSlideAnimator.swift; path = ../AGExpandingTableView/Classes/Animator/FlipAndSlideAnimator.swift; sourceTree = "<group>"; };
+		71E7DD611F822724009765BB /* CATransform3D+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CATransform3D+.swift"; path = "../AGExpandingTableView/Classes/Extension/CATransform3D+.swift"; sourceTree = "<group>"; };
+		71E7DD621F822724009765BB /* UIView+ExpandingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+ExpandingTableView.swift"; path = "../AGExpandingTableView/Classes/Extension/UIView+ExpandingTableView.swift"; sourceTree = "<group>"; };
+		71E7DD631F822738009765BB /* ExpandingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingTableView.swift; path = AGExpandingTableView/Classes/ExpandingTableView.swift; sourceTree = "<group>"; };
+		71E7DD641F822738009765BB /* ExpandingTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingTableViewDataSource.swift; path = AGExpandingTableView/Classes/ExpandingTableViewDataSource.swift; sourceTree = "<group>"; };
+		71E7DD651F822738009765BB /* ExpandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingCell.swift; path = AGExpandingTableView/Classes/ExpandingCell.swift; sourceTree = "<group>"; };
+		71E7DD661F822738009765BB /* ExpandingCellDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingCellDescriptor.swift; path = AGExpandingTableView/Classes/ExpandingCellDescriptor.swift; sourceTree = "<group>"; };
+		7A223098149BFE8C07940B64AD4E5D69 /* Pods-AGExpandingTableView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGExpandingTableView_Example-resources.sh"; sourceTree = "<group>"; };
+		84D4B67BDD9896D6781EE13C7A271CF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8566404198946D9125D9AF86683255A5 /* Pods-AGExpandingTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AGExpandingTableView_Example.modulemap"; sourceTree = "<group>"; };
+		8B8D4FA9963BE2C3E3C5540BB98905EF /* AGExpandingTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AGExpandingTableView.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A2FC6AF196DE6F9A5877DA803B0B421 /* Pods-AGExpandingTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGExpandingTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC7394A9F5836CA8978C29DDFD9A5DC3 /* Pods-AGExpandingTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AGExpandingTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B66F68BAF5BB13216A1123CB02E026F6 /* AGExpandingTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AGExpandingTableView-umbrella.h"; sourceTree = "<group>"; };
+		B879367348C526F492149CC688D0A7DE /* AGExpandingTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AGExpandingTableView.modulemap; sourceTree = "<group>"; };
+		C347547CA92B9C53D8134DDA4EC90870 /* AGExpandingTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AGExpandingTableView-prefix.pch"; sourceTree = "<group>"; };
+		CD8C389C0059D4944F19BAF92493408A /* Pods_AGExpandingTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGExpandingTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5041EE64180A3ACE453AFD28AEBF61 /* Pods-AGExpandingTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AGExpandingTableView_Example-dummy.m"; sourceTree = "<group>"; };
+		F1CD129B9D964A290C9F1CB7744E32AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F9CB6337240CA32190EDD766510EFC /* Pods-AGExpandingTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AGExpandingTableView_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0345C3A98CBEB6E1E8128CE9129B9E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8965C63FEE54B6A810E44ECA0508135 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E52D34F11892896F6CC8F375A14D92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6749FCF227EFFE2793DBF397245B0805 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8592D9A3F439E0E2162584601E72A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06928D6CE1259CFA1836FE14B1534107 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2214768F3EF2C656C3B6D9900472DF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EDB388422ABDCAAAB1238A25E356D37 /* AGExpandingTableView.framework */,
+				2EEB306BF0CF2C77D8F63FA540B4634F /* Pods_AGExpandingTableView_Example.framework */,
+				CD8C389C0059D4944F19BAF92493408A /* Pods_AGExpandingTableView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39DBB3CCD597D72309A837BC9BB34EF6 /* AGExpandingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				71E7DD5D1F8226C4009765BB /* Animator */,
+				71E7DD5C1F8226BA009765BB /* Extension */,
+				71E7DD651F822738009765BB /* ExpandingCell.swift */,
+				71E7DD661F822738009765BB /* ExpandingCellDescriptor.swift */,
+				71E7DD631F822738009765BB /* ExpandingTableView.swift */,
+				71E7DD641F822738009765BB /* ExpandingTableViewDataSource.swift */,
+				52B819CE3F1D728C76AD30BA1873F7EC /* Support Files */,
+			);
+			name = AGExpandingTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		52B819CE3F1D728C76AD30BA1873F7EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B879367348C526F492149CC688D0A7DE /* AGExpandingTableView.modulemap */,
+				8B8D4FA9963BE2C3E3C5540BB98905EF /* AGExpandingTableView.xcconfig */,
+				44A5C0C48FF61F6968B449781F6A8DC7 /* AGExpandingTableView-dummy.m */,
+				C347547CA92B9C53D8134DDA4EC90870 /* AGExpandingTableView-prefix.pch */,
+				B66F68BAF5BB13216A1123CB02E026F6 /* AGExpandingTableView-umbrella.h */,
+				08C6D1D74E624D86E57541123A0DE2B1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AGExpandingTableView";
+			sourceTree = "<group>";
+		};
+		6C7D8CA9E64A22C129D298BA8CA9E184 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39DBB3CCD597D72309A837BC9BB34EF6 /* AGExpandingTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		71E7DD5C1F8226BA009765BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				71E7DD611F822724009765BB /* CATransform3D+.swift */,
+				71E7DD621F822724009765BB /* UIView+ExpandingTableView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		71E7DD5D1F8226C4009765BB /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				71E7DD5E1F822703009765BB /* ExpandingCellAnimator.swift */,
+				71E7DD601F822703009765BB /* FlipAndSlideAnimator.swift */,
+				71E7DD5F1F822703009765BB /* FoldAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		730F2DF2461E1CF03FF09FAD7BA0EC90 /* Pods-AGExpandingTableView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				84D4B67BDD9896D6781EE13C7A271CF1 /* Info.plist */,
+				8566404198946D9125D9AF86683255A5 /* Pods-AGExpandingTableView_Example.modulemap */,
+				2D9BB710B11BB7BC9597D37945E7FA76 /* Pods-AGExpandingTableView_Example-acknowledgements.markdown */,
+				AC7394A9F5836CA8978C29DDFD9A5DC3 /* Pods-AGExpandingTableView_Example-acknowledgements.plist */,
+				CF5041EE64180A3ACE453AFD28AEBF61 /* Pods-AGExpandingTableView_Example-dummy.m */,
+				50EF911E13DBEA57DB5FCB143D68CD0D /* Pods-AGExpandingTableView_Example-frameworks.sh */,
+				7A223098149BFE8C07940B64AD4E5D69 /* Pods-AGExpandingTableView_Example-resources.sh */,
+				1EF622344670F7647C5592C36F726F6E /* Pods-AGExpandingTableView_Example-umbrella.h */,
+				40B3E02E80064D2B18CB53A2A4FAEDD0 /* Pods-AGExpandingTableView_Example.debug.xcconfig */,
+				06574E47CB14BF5CD7F5FBB60088F44E /* Pods-AGExpandingTableView_Example.release.xcconfig */,
+			);
+			name = "Pods-AGExpandingTableView_Example";
+			path = "Target Support Files/Pods-AGExpandingTableView_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6C7D8CA9E64A22C129D298BA8CA9E184 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2214768F3EF2C656C3B6D9900472DF3A /* Products */,
+				D30499D2ECC42D9D010BF49E8B2B49CC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9762ABC8F18F5DB66C98967A3098BDF2 /* Pods-AGExpandingTableView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F1CD129B9D964A290C9F1CB7744E32AF /* Info.plist */,
+				102D823DB02129655DC37B6FBF4B7FA5 /* Pods-AGExpandingTableView_Tests.modulemap */,
+				2902A4FFC7F6353962CB093FA99D780A /* Pods-AGExpandingTableView_Tests-acknowledgements.markdown */,
+				4CDA3AA8D9EF9E344EEE7B2825AF693E /* Pods-AGExpandingTableView_Tests-acknowledgements.plist */,
+				F4F9CB6337240CA32190EDD766510EFC /* Pods-AGExpandingTableView_Tests-dummy.m */,
+				1063A60B938B78F70E20A143FE5E7058 /* Pods-AGExpandingTableView_Tests-frameworks.sh */,
+				2383B19C944FE79174300EE3954DF29E /* Pods-AGExpandingTableView_Tests-resources.sh */,
+				4B6CF3EFDD78670B4459351663EABD43 /* Pods-AGExpandingTableView_Tests-umbrella.h */,
+				9A2FC6AF196DE6F9A5877DA803B0B421 /* Pods-AGExpandingTableView_Tests.debug.xcconfig */,
+				55C91248B17C88DA1F85C64805CEC6D3 /* Pods-AGExpandingTableView_Tests.release.xcconfig */,
+			);
+			name = "Pods-AGExpandingTableView_Tests";
+			path = "Target Support Files/Pods-AGExpandingTableView_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30499D2ECC42D9D010BF49E8B2B49CC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				730F2DF2461E1CF03FF09FAD7BA0EC90 /* Pods-AGExpandingTableView_Example */,
+				9762ABC8F18F5DB66C98967A3098BDF2 /* Pods-AGExpandingTableView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2ADDB85D071FE22D83C804B9198783A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7BA1B8084661DE185EB07D8C26F0B67 /* Pods-AGExpandingTableView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2BE411F23B8F4ED796530BE3973DC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2762A8AA055759A8015ADCFF3E0A69 /* AGExpandingTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F73D23D7901DA0CE648645423D57C61A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87944229D08E5BAD7597333B06E2E4BA /* Pods-AGExpandingTableView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		740810193448F96F6D14BF0939353471 /* Pods-AGExpandingTableView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE9C65E30BB582C06EAE32637677DF2 /* Build configuration list for PBXNativeTarget "Pods-AGExpandingTableView_Example" */;
+			buildPhases = (
+				534ECA8BF97C028BF32BE46F680D5653 /* Sources */,
+				6E52D34F11892896F6CC8F375A14D92B /* Frameworks */,
+				F73D23D7901DA0CE648645423D57C61A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15527DF723D8D513E8248C37030FF814 /* PBXTargetDependency */,
+			);
+			name = "Pods-AGExpandingTableView_Example";
+			productName = "Pods-AGExpandingTableView_Example";
+			productReference = 2EEB306BF0CF2C77D8F63FA540B4634F /* Pods_AGExpandingTableView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		914A3D49D437B996916FFD2B5796BA63 /* AGExpandingTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D940F0CBEDA30FDD1AF4672D4E7044 /* Build configuration list for PBXNativeTarget "AGExpandingTableView" */;
+			buildPhases = (
+				C9E91C0878E0966ECA051E098E5761D7 /* Sources */,
+				BD8592D9A3F439E0E2162584601E72A1 /* Frameworks */,
+				3A2BE411F23B8F4ED796530BE3973DC4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AGExpandingTableView;
+			productName = AGExpandingTableView;
+			productReference = 3EDB388422ABDCAAAB1238A25E356D37 /* AGExpandingTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		994CDCEF30F07446CE5D33C01844C526 /* Pods-AGExpandingTableView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 387BF23F69C72CF302BAABC56DF337BF /* Build configuration list for PBXNativeTarget "Pods-AGExpandingTableView_Tests" */;
+			buildPhases = (
+				340ABE01423E1A08350DFCDC4EBE726D /* Sources */,
+				0345C3A98CBEB6E1E8128CE9129B9E3B /* Frameworks */,
+				2ADDB85D071FE22D83C804B9198783A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AGExpandingTableView_Tests";
+			productName = "Pods-AGExpandingTableView_Tests";
+			productReference = CD8C389C0059D4944F19BAF92493408A /* Pods_AGExpandingTableView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					914A3D49D437B996916FFD2B5796BA63 = {
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2214768F3EF2C656C3B6D9900472DF3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				914A3D49D437B996916FFD2B5796BA63 /* AGExpandingTableView */,
+				740810193448F96F6D14BF0939353471 /* Pods-AGExpandingTableView_Example */,
+				994CDCEF30F07446CE5D33C01844C526 /* Pods-AGExpandingTableView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		340ABE01423E1A08350DFCDC4EBE726D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47645A5DDE4982A89911E3C0CFBF3EAA /* Pods-AGExpandingTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534ECA8BF97C028BF32BE46F680D5653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A462B269E17C5AD762C9DD2144228F9 /* Pods-AGExpandingTableView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E91C0878E0966ECA051E098E5761D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A40F019AF6C32BD8F157EEC37A97650 /* AGExpandingTableView-dummy.m in Sources */,
+				71E7DD691F822745009765BB /* FoldAnimator.swift in Sources */,
+				71E7DD6C1F822752009765BB /* ExpandingCell.swift in Sources */,
+				71E7DD6E1F822758009765BB /* ExpandingTableView.swift in Sources */,
+				71E7DD6A1F82274B009765BB /* CATransform3D+.swift in Sources */,
+				71E7DD6B1F82274E009765BB /* UIView+ExpandingTableView.swift in Sources */,
+				71E7DD6D1F822755009765BB /* ExpandingCellDescriptor.swift in Sources */,
+				71E7DD6F1F82275B009765BB /* ExpandingTableViewDataSource.swift in Sources */,
+				71E7DD681F822742009765BB /* FlipAndSlideAnimator.swift in Sources */,
+				71E7DD671F822740009765BB /* ExpandingCellAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15527DF723D8D513E8248C37030FF814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AGExpandingTableView;
+			target = 914A3D49D437B996916FFD2B5796BA63 /* AGExpandingTableView */;
+			targetProxy = AD9CDFC59690BCB70C750AF94E140A2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0549447E79D59E3D1F03586BD2323208 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2FC6AF196DE6F9A5877DA803B0B421 /* Pods-AGExpandingTableView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AGExpandingTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGExpandingTableView_Tests/Pods-AGExpandingTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AGExpandingTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		229BD77CA037169A2C0C301225E3421B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8D4FA9963BE2C3E3C5540BB98905EF /* AGExpandingTableView.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AGExpandingTableView/AGExpandingTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AGExpandingTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AGExpandingTableView/AGExpandingTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AGExpandingTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A43A21C240C0363C0CC2003D43AF6C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8D4FA9963BE2C3E3C5540BB98905EF /* AGExpandingTableView.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AGExpandingTableView/AGExpandingTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AGExpandingTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AGExpandingTableView/AGExpandingTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AGExpandingTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A7FD55721CC272194AEDABDF0F65BA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06574E47CB14BF5CD7F5FBB60088F44E /* Pods-AGExpandingTableView_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AGExpandingTableView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGExpandingTableView_Example/Pods-AGExpandingTableView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AGExpandingTableView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF9A8986D490166AEF7248A4D5A73156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C91248B17C88DA1F85C64805CEC6D3 /* Pods-AGExpandingTableView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AGExpandingTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGExpandingTableView_Tests/Pods-AGExpandingTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AGExpandingTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCB0B1B908269D2D425832369177FF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B3E02E80064D2B18CB53A2A4FAEDD0 /* Pods-AGExpandingTableView_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AGExpandingTableView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AGExpandingTableView_Example/Pods-AGExpandingTableView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AGExpandingTableView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D940F0CBEDA30FDD1AF4672D4E7044 /* Build configuration list for PBXNativeTarget "AGExpandingTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A43A21C240C0363C0CC2003D43AF6C4 /* Debug */,
+				229BD77CA037169A2C0C301225E3421B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		387BF23F69C72CF302BAABC56DF337BF /* Build configuration list for PBXNativeTarget "Pods-AGExpandingTableView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0549447E79D59E3D1F03586BD2323208 /* Debug */,
+				BF9A8986D490166AEF7248A4D5A73156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE9C65E30BB582C06EAE32637677DF2 /* Build configuration list for PBXNativeTarget "Pods-AGExpandingTableView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB0B1B908269D2D425832369177FF27 /* Debug */,
+				A7FD55721CC272194AEDABDF0F65BA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

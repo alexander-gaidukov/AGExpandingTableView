@@ -1,0 +1,6 @@
+framework module AGExpandingTableView {
+  umbrella header "AGExpandingTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

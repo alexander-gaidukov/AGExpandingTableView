@@ -1,0 +1,6 @@
+framework module Pods_AGExpandingTableView_Tests {
+  umbrella header "Pods-AGExpandingTableView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
