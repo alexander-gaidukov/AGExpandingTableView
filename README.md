@@ -23,7 +23,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 * ARC
-* iOS9
+* iOS 9+
 
 ## Installation
 
