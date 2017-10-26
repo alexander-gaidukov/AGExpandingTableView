@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AGExpandingTableView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A subclass on UITableView that provides the ability to expand or collapse cells with different animation.'
 
 # This description is used to generate tags and improve search results.
