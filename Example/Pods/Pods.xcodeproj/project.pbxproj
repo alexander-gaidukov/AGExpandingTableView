@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		06928D6CE1259CFA1836FE14B1534107 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		1A40F019AF6C32BD8F157EEC37A97650 /* AGExpandingTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A5C0C48FF61F6968B449781F6A8DC7 /* AGExpandingTableView-dummy.m */; };
+		3B454C3F1F838FC900E313F0 /* ExpandingCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B454C3D1F838FC400E313F0 /* ExpandingCellAnimator.swift */; };
+		3B454C401F838FCB00E313F0 /* FlipAndSlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B454C3C1F838FC400E313F0 /* FlipAndSlideAnimator.swift */; };
+		3B454C411F838FCD00E313F0 /* FoldAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B454C3E1F838FC400E313F0 /* FoldAnimator.swift */; };
+		3B454C441F838FDF00E313F0 /* CATransform3D+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B454C421F838FD800E313F0 /* CATransform3D+.swift */; };
+		3B454C451F838FE100E313F0 /* UIView+ExpandingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B454C431F838FD800E313F0 /* UIView+ExpandingTableView.swift */; };
 		47645A5DDE4982A89911E3C0CFBF3EAA /* Pods-AGExpandingTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F9CB6337240CA32190EDD766510EFC /* Pods-AGExpandingTableView_Tests-dummy.m */; };
 		4A462B269E17C5AD762C9DD2144228F9 /* Pods-AGExpandingTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5041EE64180A3ACE453AFD28AEBF61 /* Pods-AGExpandingTableView_Example-dummy.m */; };
 		6749FCF227EFFE2793DBF397245B0805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6E2762A8AA055759A8015ADCFF3E0A69 /* AGExpandingTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B66F68BAF5BB13216A1123CB02E026F6 /* AGExpandingTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71E7DD671F822740009765BB /* ExpandingCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD5E1F822703009765BB /* ExpandingCellAnimator.swift */; };
-		71E7DD681F822742009765BB /* FlipAndSlideAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD601F822703009765BB /* FlipAndSlideAnimator.swift */; };
-		71E7DD691F822745009765BB /* FoldAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD5F1F822703009765BB /* FoldAnimator.swift */; };
-		71E7DD6A1F82274B009765BB /* CATransform3D+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD611F822724009765BB /* CATransform3D+.swift */; };
-		71E7DD6B1F82274E009765BB /* UIView+ExpandingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD621F822724009765BB /* UIView+ExpandingTableView.swift */; };
 		71E7DD6C1F822752009765BB /* ExpandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD651F822738009765BB /* ExpandingCell.swift */; };
 		71E7DD6D1F822755009765BB /* ExpandingCellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD661F822738009765BB /* ExpandingCellDescriptor.swift */; };
 		71E7DD6E1F822758009765BB /* ExpandingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7DD631F822738009765BB /* ExpandingTableView.swift */; };
@@ -47,6 +47,11 @@
 		2902A4FFC7F6353962CB093FA99D780A /* Pods-AGExpandingTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGExpandingTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D9BB710B11BB7BC9597D37945E7FA76 /* Pods-AGExpandingTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AGExpandingTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2EEB306BF0CF2C77D8F63FA540B4634F /* Pods_AGExpandingTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGExpandingTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B454C3C1F838FC400E313F0 /* FlipAndSlideAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlipAndSlideAnimator.swift; path = AGExpandingTableView/Classes/Animator/FlipAndSlideAnimator.swift; sourceTree = "<group>"; };
+		3B454C3D1F838FC400E313F0 /* ExpandingCellAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingCellAnimator.swift; path = AGExpandingTableView/Classes/Animator/ExpandingCellAnimator.swift; sourceTree = "<group>"; };
+		3B454C3E1F838FC400E313F0 /* FoldAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoldAnimator.swift; path = AGExpandingTableView/Classes/Animator/FoldAnimator.swift; sourceTree = "<group>"; };
+		3B454C421F838FD800E313F0 /* CATransform3D+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CATransform3D+.swift"; path = "AGExpandingTableView/Classes/Extension/CATransform3D+.swift"; sourceTree = "<group>"; };
+		3B454C431F838FD800E313F0 /* UIView+ExpandingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+ExpandingTableView.swift"; path = "AGExpandingTableView/Classes/Extension/UIView+ExpandingTableView.swift"; sourceTree = "<group>"; };
 		3EDB388422ABDCAAAB1238A25E356D37 /* AGExpandingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AGExpandingTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B3E02E80064D2B18CB53A2A4FAEDD0 /* Pods-AGExpandingTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGExpandingTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		44A5C0C48FF61F6968B449781F6A8DC7 /* AGExpandingTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AGExpandingTableView-dummy.m"; sourceTree = "<group>"; };
@@ -55,11 +60,6 @@
 		50EF911E13DBEA57DB5FCB143D68CD0D /* Pods-AGExpandingTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AGExpandingTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		55C91248B17C88DA1F85C64805CEC6D3 /* Pods-AGExpandingTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AGExpandingTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		71E7DD5E1F822703009765BB /* ExpandingCellAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingCellAnimator.swift; path = ../AGExpandingTableView/Classes/Animator/ExpandingCellAnimator.swift; sourceTree = "<group>"; };
-		71E7DD5F1F822703009765BB /* FoldAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoldAnimator.swift; path = ../AGExpandingTableView/Classes/Animator/FoldAnimator.swift; sourceTree = "<group>"; };
-		71E7DD601F822703009765BB /* FlipAndSlideAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlipAndSlideAnimator.swift; path = ../AGExpandingTableView/Classes/Animator/FlipAndSlideAnimator.swift; sourceTree = "<group>"; };
-		71E7DD611F822724009765BB /* CATransform3D+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CATransform3D+.swift"; path = "../AGExpandingTableView/Classes/Extension/CATransform3D+.swift"; sourceTree = "<group>"; };
-		71E7DD621F822724009765BB /* UIView+ExpandingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+ExpandingTableView.swift"; path = "../AGExpandingTableView/Classes/Extension/UIView+ExpandingTableView.swift"; sourceTree = "<group>"; };
 		71E7DD631F822738009765BB /* ExpandingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingTableView.swift; path = AGExpandingTableView/Classes/ExpandingTableView.swift; sourceTree = "<group>"; };
 		71E7DD641F822738009765BB /* ExpandingTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingTableViewDataSource.swift; path = AGExpandingTableView/Classes/ExpandingTableViewDataSource.swift; sourceTree = "<group>"; };
 		71E7DD651F822738009765BB /* ExpandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandingCell.swift; path = AGExpandingTableView/Classes/ExpandingCell.swift; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 		39DBB3CCD597D72309A837BC9BB34EF6 /* AGExpandingTableView */ = {
 			isa = PBXGroup;
 			children = (
-				71E7DD5D1F8226C4009765BB /* Animator */,
-				71E7DD5C1F8226BA009765BB /* Extension */,
+				3B454C3B1F838FAB00E313F0 /* Extension */,
+				3B454C3A1F838F9C00E313F0 /* Animator */,
 				71E7DD651F822738009765BB /* ExpandingCell.swift */,
 				71E7DD661F822738009765BB /* ExpandingCellDescriptor.swift */,
 				71E7DD631F822738009765BB /* ExpandingTableView.swift */,
@@ -131,6 +131,25 @@
 			);
 			name = AGExpandingTableView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		3B454C3A1F838F9C00E313F0 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				3B454C3D1F838FC400E313F0 /* ExpandingCellAnimator.swift */,
+				3B454C3C1F838FC400E313F0 /* FlipAndSlideAnimator.swift */,
+				3B454C3E1F838FC400E313F0 /* FoldAnimator.swift */,
+			);
+			name = Animator;
+			sourceTree = "<group>";
+		};
+		3B454C3B1F838FAB00E313F0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B454C421F838FD800E313F0 /* CATransform3D+.swift */,
+				3B454C431F838FD800E313F0 /* UIView+ExpandingTableView.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		52B819CE3F1D728C76AD30BA1873F7EC /* Support Files */ = {
@@ -153,25 +172,6 @@
 				39DBB3CCD597D72309A837BC9BB34EF6 /* AGExpandingTableView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		71E7DD5C1F8226BA009765BB /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				71E7DD611F822724009765BB /* CATransform3D+.swift */,
-				71E7DD621F822724009765BB /* UIView+ExpandingTableView.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		71E7DD5D1F8226C4009765BB /* Animator */ = {
-			isa = PBXGroup;
-			children = (
-				71E7DD5E1F822703009765BB /* ExpandingCellAnimator.swift */,
-				71E7DD601F822703009765BB /* FlipAndSlideAnimator.swift */,
-				71E7DD5F1F822703009765BB /* FoldAnimator.swift */,
-			);
-			path = Animator;
 			sourceTree = "<group>";
 		};
 		730F2DF2461E1CF03FF09FAD7BA0EC90 /* Pods-AGExpandingTableView_Example */ = {
@@ -383,15 +383,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A40F019AF6C32BD8F157EEC37A97650 /* AGExpandingTableView-dummy.m in Sources */,
-				71E7DD691F822745009765BB /* FoldAnimator.swift in Sources */,
+				3B454C451F838FE100E313F0 /* UIView+ExpandingTableView.swift in Sources */,
+				3B454C3F1F838FC900E313F0 /* ExpandingCellAnimator.swift in Sources */,
+				3B454C441F838FDF00E313F0 /* CATransform3D+.swift in Sources */,
 				71E7DD6C1F822752009765BB /* ExpandingCell.swift in Sources */,
 				71E7DD6E1F822758009765BB /* ExpandingTableView.swift in Sources */,
-				71E7DD6A1F82274B009765BB /* CATransform3D+.swift in Sources */,
-				71E7DD6B1F82274E009765BB /* UIView+ExpandingTableView.swift in Sources */,
 				71E7DD6D1F822755009765BB /* ExpandingCellDescriptor.swift in Sources */,
+				3B454C411F838FCD00E313F0 /* FoldAnimator.swift in Sources */,
+				3B454C401F838FCB00E313F0 /* FlipAndSlideAnimator.swift in Sources */,
 				71E7DD6F1F82275B009765BB /* ExpandingTableViewDataSource.swift in Sources */,
-				71E7DD681F822742009765BB /* FlipAndSlideAnimator.swift in Sources */,
-				71E7DD671F822740009765BB /* ExpandingCellAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
